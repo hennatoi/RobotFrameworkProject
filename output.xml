@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.5 on win32)" generated="20230205 11:19:52.802" rpa="false" schemaversion="3">
+<suite id="s1" name="UseCase" source="C:\Users\henna\ownprojects\Robot\useCase\UseCase.robot">
+<test id="s1-t1" name="UseCaseTest" line="17">
+<kw name="launchBrowser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230205 11:19:53.566" level="INFO">Opening browser 'chrome' to base url 'http://amazon.com'.</msg>
+<status status="PASS" starttime="20230205 11:19:53.565" endtime="20230205 11:19:59.207"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230205 11:19:59.208" endtime="20230205 11:19:59.512"/>
+</kw>
+<status status="PASS" starttime="20230205 11:19:53.564" endtime="20230205 11:19:59.512"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>robot vacuum cleaner</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230205 11:19:59.520" level="INFO">Typing text 'robot vacuum cleaner' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20230205 11:19:59.518" endtime="20230205 11:20:00.034"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230205 11:20:00.036" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20230205 11:20:00.035" endtime="20230205 11:20:03.115"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,400)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230205 11:20:03.118" level="INFO">Executing JavaScript:
+window.scrollTo(0,400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230205 11:20:03.117" endtime="20230205 11:20:03.146"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:a-link-normal s-navigation-item</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230205 11:20:03.150" level="INFO">Clicking button 'class:a-link-normal s-navigation-item'.</msg>
+<msg timestamp="20230205 11:20:03.634" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230205 11:20:03.635" level="FAIL">Button with locator 'class:a-link-normal s-navigation-item' not found.</msg>
+<status status="FAIL" starttime="20230205 11:20:03.148" endtime="20230205 11:20:03.670"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230205 11:20:03.670" endtime="20230205 11:20:03.670"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230205 11:20:03.670" endtime="20230205 11:20:03.670"/>
+</kw>
+<status status="FAIL" starttime="20230205 11:19:53.563" endtime="20230205 11:20:03.670">Button with locator 'class:a-link-normal s-navigation-item' not found.</status>
+</test>
+<status status="FAIL" starttime="20230205 11:19:52.807" endtime="20230205 11:20:03.681"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="UseCase">UseCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
